@@ -40,16 +40,7 @@ Input: center= 720, tuples(x, y) = (1440, 900)  Output: 0.000000
 
 class Solution:    
     def propcontrol(self, center, res):
-            new = (center * 2 / res[0]) - 1
-            #type center: int
-            #type res: tuples of int
-            #return type: float
-            if new > 1:
-                 new = 1
-            elif new < -1:
-                 new = -1
-            #TODO: Write code below to return a float with the solution to the prompt.
-            return new
+        return (center-res[0]/2)/(res[0]/2)
         
         
 
